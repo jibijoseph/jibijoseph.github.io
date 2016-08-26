@@ -64,6 +64,11 @@ function setGameOver(){
   guessField.disabled = true;
   submitGuess.disabled = true;
 
+  for (i=0; i<resultAll.length; i++){
+    resultAll[i].textContent = '';
+    resultAll[i].style.backgroundColor = 'white';
+  }
+  
   resetButton = document.createElement('button');
   resetButton.textContent = 'Start over';
   document.body.appendChild(resetButton);
