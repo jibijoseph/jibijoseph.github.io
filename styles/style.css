@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
 }
 
-.lastResult {
+.guessTries {
   color: white;
   padding: 3px;
 }
