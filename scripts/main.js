@@ -51,7 +51,7 @@ guessSubmit.addEventListener('click',checkGuess);
 function setGameOver(){
   guessField.disabled = true;
   guessSubmit.disabled = true;
-  if win === false {
+  if (win === false) {
     answer.textContent = 'The right answer was ' + randomNumber;
   }
   resetButton = document.createElement('button');
