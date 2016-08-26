@@ -15,7 +15,7 @@ var win = false;
 
 
 function checkGuess(){
-  guessValue = Number(guessField.value);
+  var guessValue = Number(guessField.value);
 
   if (guessCount === 1 )  {
     previousTries.textContent = 'Previous guesses : ';
