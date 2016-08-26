@@ -51,9 +51,9 @@ function gameContinue(hintValue){
   currentResult.textContent = 'Wrong guess. Try again';
   currentResult.style.backgroundColor = "yellow";
   if (hintValue < 0) {
-    hint.textContent = 'Too high';
-  } else {
     hint.textContent = 'Too low';
+  } else {
+    hint.textContent = 'Too high';
   }
   guessCount++;
   guessField.value = '';
