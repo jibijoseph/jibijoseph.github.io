@@ -6,7 +6,7 @@ var answer = document.querySelector(".answer");
 var hint = document.querySelector(".hint");
 
 var guessSubmit = document.querySelector(".guessSubmit");
-var guessField = document.querySelector(".gueussField");
+var guessField = document.querySelector(".guessField");
 
 var guessCount = 1;
 var resetButton;
