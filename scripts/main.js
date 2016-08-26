@@ -13,11 +13,13 @@ var guessCount = 1;
 var resetButton;
 var win = false;
 
-previousTries.textContent = 'Previous guesses : ';
 
 function checkGuess(){
   guessValue = Number(guessField.value);
-  
+
+  if (guessCount === 1 )  {
+    previousTries.textContent = 'Previous guesses : ';
+  }
   previousTries.textContent += guessValue + ' ';
   
   if (guessValue === randomNumber){
@@ -72,8 +74,6 @@ function resetGame(){
   for (i=0; i<resultAll.length; i++){
     resultAll[i].textContent = '';
   }
-  
-  previousTries.textContent = 'Previous guesses : ';
   
   resetButton.parentNode.removeChild(resetChild);
   
