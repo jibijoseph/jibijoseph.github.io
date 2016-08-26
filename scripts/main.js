@@ -66,7 +66,7 @@ function resetGame(){
   guessSubmit.disabled = false;
   guessField.value = '';
   
-  var resetParas = document.querySelectorAll('.resultParas', p);
+  var resetParas = document.querySelectorAll('.result', p);
   for (var i=0; i<resetParas.length(); i++ ){
     resetParas[i].textContent = '';
   }
