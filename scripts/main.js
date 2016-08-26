@@ -3,7 +3,7 @@ var randomNumber = Math.floor(Math.round() * 100) + 1;
 var guessField = document.querySelector(".guessField");
 var submitGuess = document.querySelector(".submitGuess");
 
-var resultAll = document.querySelectorAll(".result", p);
+var resultAll = document.querySelectorAll(".result p");
 var previousTries = document.querySelector(".previousTries");
 var currentResult = document.querySelector(".currentResult");
 var hint = document.querySelector(".hint");
