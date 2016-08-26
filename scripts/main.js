@@ -50,6 +50,11 @@ function gameOver(){
 function gameContinue(hintValue){
   currentResult.textContent = 'Wrong guess. Try again';
   currentResult.style.backgroundColor = "yellow";
+  if (hintValue < 0) {
+    hint.textContent = 'Too high';
+  } else {
+    hint.textContent = 'Too low';
+  }
   guessCount++;
   guessField.value = '';
   guessField.focus();
