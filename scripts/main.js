@@ -1,4 +1,4 @@
-var randomNumber = Math.floor(Math.round() * 100) + 1;
+var randomNumber = Math.floor(Math.random() * 100) + 1;
 
 var guessField = document.querySelector(".guessField");
 var submitGuess = document.querySelector(".submitGuess");
