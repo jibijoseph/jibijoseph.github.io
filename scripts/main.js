@@ -74,10 +74,11 @@ function resetGame(){
   guessField.disabled = false;
   submitGuess.disabled = false;
   guessField.value = '';
-  guessField.setFocus();
+  guessField.Focus();
   
   for (i=0; i<resultAll.length; i++){
     resultAll[i].textContent = '';
+    resultAll[i].style.backgroundColor = 'white';
   }
   
   resetButton.parentNode.removeChild(resetChild);
