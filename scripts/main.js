@@ -60,7 +60,7 @@ function gameContinue(hintValue){
   guessField.focus();
 }
 
-function gameOver(){
+function setGameOver(){
   guessField.disabled = true;
   submitGuess.disabled = true;
 
